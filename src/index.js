@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import TodoList from './Todo_List';
 import reportWebVitals from './reportWebVitals';
+import { Container } from '@mui/material';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Container maxWidth="sm" style={{ backgroundColor: '#f0f0f0', borderRadius: '8px' }}>
+
+    <TodoList/>
+    </Container>
   </React.StrictMode>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
